@@ -1,0 +1,34 @@
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: linear-gradient(orange, white); }
+  footer {
+    background-image: url(/images/img.fondocervezafooter.jpg); }
+  body header {
+    height: 10em; }
+  body footer {
+    height: 12em;
+    margin-top: 2em; }
+  body main {
+    height: 54em;
+    margin-left: 2em;
+    margin-right: 2em; }
+  .margin-h2 {
+    margin-bottom: 1em; }
+  .fuente1, .fuente2, .fuente3, .fuente4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    animation: bounceInDown;
+    animation-duration: 2s; }
+  .fuente2 {
+    font-size: 40px; }
+  .fuente3 {
+    font-size: 30px; }
+  .fuente4 {
+    animation: shakeX;
+    font-size: 25px; }
+  .leters-p {
+    font-family: verdana 20px;
+    color: black; }
+  .bordesredondeados {
+    border-radius: 20%;
+    border-style: dashed; } }

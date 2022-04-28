@@ -1,0 +1,22 @@
+body{
+    header{
+    height: 10em;
+    }
+    footer{
+        height: 12em;
+        margin-top: 2em;
+    }
+}
+$tb-space:(
+    alto:54em,
+    lder:2em,
+    lizq: 2em,
+);
+body main{
+    height: map-get($map:$tb-space , $key:alto );
+    margin-left: map-get($map:$tb-space , $key:lizq );
+    margin-right: map-get($map:$tb-space , $key:lder );
+}
+.margin-h2{
+    margin-bottom: 1em;
+}
