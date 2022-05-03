@@ -2,7 +2,7 @@ $tb-space:(
     alto:54em,
     lder:2em,
     lizq: 2em,
-);
+); 
 body{
     header{
     height: 10em;
@@ -11,9 +11,9 @@ body{
         height: map-get($map:$tb-space , $key:alto );
         margin-left: map-get($map:$tb-space , $key:lizq );
         margin-right: map-get($map:$tb-space , $key:lder );
-    }        
-    footer{
-        height: 12em;
+    }         
+     footer{
+        height: 6em;
         margin-top: 2em;
     }
 }
@@ -21,3 +21,10 @@ body{
 .margin-h2{
     margin-bottom: 2em;
 }
+.line-div{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+ 
