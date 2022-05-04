@@ -1,33 +1,35 @@
-.fuente1{
-    font-family:'Oswald', sans-serif;
-    font-size: 60px;
-    animation:bounceInDown;
-    animation-duration: 2s;
+@media screen and (min-width: 1024px){
+    .fuente1{
+        font-family:'Oswald', sans-serif;
+        font-size: 60px;
+        animation:bounceInDown;
+        animation-duration: 2s;
+    }
+    .fuente2{
+        @extend .fuente1;
+        font-size: 40px;
+    }
+    .fuente3{
+        @extend .fuente1;
+        font-size: 30px;
+    }
+    .fuente4{
+        @extend .fuente1;
+        animation:shakeX;
+        font-size: 35px;
+    }
+    
+    $p-font: Verdana, Geneva, Tahoma, sans-serif 20px;
+    $p-colour: black;
+    @mixin leter($p-font, $p-colour) {
+        font-family: $p-font;
+        color: $p-colour;
+    }
+    .leters-p{
+        @include leter(verdana 20px, black)
+    }
+    
 }
-.fuente2{
-    @extend .fuente1;
-    font-size: 40px;
-}
-.fuente{
-    @extend .fuente1;
-    font-size: 50px;
-}
-.fuente3{
-    @extend .fuente1;
-    font-size: 30px;
-}
-.fuente4{
-    @extend .fuente1;
-    animation:shakeX;
-    font-size: 25px;
-}
-
-$p-font: Verdana, Geneva, Tahoma, sans-serif 20px;
-$p-colour: black;
-@mixin leter($p-font, $p-colour) {
-    font-family: $p-font;
-    color: $p-colour;
-}
-.leters-p{
-    @include leter(verdana 20px, black)
+@media only screen and (max-width: 320px){
+    
 }

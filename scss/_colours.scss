@@ -1,6 +1,13 @@
-body{
-    background-image: linear-gradient(orange, white);
+@media screen and (min-width: 1024px){
+    body{
+        background-image: linear-gradient(to bottom yellow orange white);
+    }
+    footer{
+        background-image: url(/images/img.fondocervezafooter.jpg);
+    }
 }
-footer{
-    background-image: url(/images/img.fondocervezafooter.jpg);
+@media only screen and (max-width: 320px){
+    body{
+        background-image: linear-gradient(to bottom yellow orange white);
+    }
 }
